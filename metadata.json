@@ -1,0 +1,6 @@
+{
+  "name": "PowerSpot Peru",
+  "description": "Red de estaciones de carga con energía solar inteligente en Arequipa, Perú.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

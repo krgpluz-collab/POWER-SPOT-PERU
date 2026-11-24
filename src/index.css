@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #C4CDD8;
+    color: #0F172A;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.powerspot-marble-bg {
+  background-color: #C4CDD8;
+  background-image:
+    radial-gradient(ellipse 85% 65% at 15% 15%, rgba(214, 222, 232, 0.75) 0%, rgba(214, 222, 232, 0) 60%),
+    radial-gradient(ellipse 80% 65% at 85% 25%, rgba(164, 177, 193, 0.55) 0%, rgba(164, 177, 193, 0) 58%),
+    radial-gradient(ellipse 75% 70% at 50% 75%, rgba(206, 215, 226, 0.65) 0%, rgba(206, 215, 226, 0) 60%),
+    radial-gradient(ellipse 65% 55% at 20% 85%, rgba(154, 168, 184, 0.5) 0%, rgba(154, 168, 184, 0) 55%),
+    linear-gradient(130deg, rgba(255, 255, 255, 0.14) 0%, rgba(148, 163, 184, 0.16) 45%, rgba(255, 255, 255, 0.12) 72%, rgba(148, 163, 184, 0.2) 100%);
+  background-attachment: fixed;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
